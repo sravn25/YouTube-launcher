@@ -1,0 +1,125 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+    <!-- Website icon -->
+    <link rel="icon" href="image/youtube.png" type="image/png" sizes="16x16">
+
+    <title>YouTube Launcher</title>
+
+  </head>
+  <body style="background-image:url('image/pewdiepie.jpg');">
+    <div class="container-fluid p-3 bg-primary text-white">
+        <h3 class="display-4">Main Menu</h3>
+        <h4><small>Welcome to the ultimate YouTube launcher!</small></h4>
+    </div>
+    <br><br>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-sm-2"></div>
+            <div class="col-sm-3 bg-primary" style="height:500px;"><center><br>
+                <a href="#" data-container="body" data-toggle="popover" title="Hey!" data-content="Click on YouTube below.">
+                    <img src="image/youtube.png" alt="YouTube" style="width:200px; height:150px"></a><br><br>
+                    <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#myModal">
+                        <h4 class="display-4 text-white">YouTube</h4></button>
+    
+                <div class="modal fade" id="myModal">
+                    <div class="modal-dialog">
+                        <div class="modal-content">
+
+                            <div class="modal-header">
+                                <h4 class="modal-title">Warning!</h4>
+                                <button type="button" class="close" data-dismiss="modal">x</button>
+                            </div>
+
+                            <div class="modal-body">
+                                You will proceed to YouTube.
+                            </div>
+
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-outline-danger text-danger">
+                                    <a href="https://www.youtube.com" class="text-warning"><strong>Continue</strong></a></button>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>  
+                <hr><blockquote class="blockquote text-light" style="font-size:14px;"><p>
+                    YouTube is an American online video-sharing platform headquartered in San Bruno, 
+                    California. Three former PayPal employees—Chad Hurley, Steve Chen, 
+                    and Jawed Karim—created the service in February 2005. Google bought the site 
+                    in November 2006 for US$1.65 billion; YouTube now operates as one of Google's subsidiaries.</p>
+                    <footer class="blockquote-footer"><a href="https://en.wikipedia.org/wiki/YouTube" target="_blank">
+                    Wikipedia</a></footer>
+                </blockquote>  
+            </center></div>
+            <div class="col-sm-2"></div>
+            <div class="col-sm-3 bg-primary" style="height:500px"><center>
+                <a href="#" data-container="body" data-toggle="popover" title="Hey!" data-content="Click on YouTube Kids below.">
+                    <img src="image/youtube.kids.png" class="rounded-circle" alt="YouTube Kids" style="width:200px; height:200px"></a><br>
+                    <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#myModalKids">
+                        <h4 class="display-4 text-white">YouTube Kids</a></h4></button>
+                        <div class="modal fade" id="myModalKids">
+                            <div class="modal-dialog">
+                                <div class="modal-content">
+        
+                                    <div class="modal-header">
+                                        <h4 class="modal-title">Warning!</h4>
+                                        <button type="button" class="close" data-dismiss="modal">x</button>
+                                    </div>
+        
+                                    <div class="modal-body">
+                                        You will proceed to YouTube Kids.
+                                    </div>
+        
+                                    <div class="modal-footer">
+                                        <button type="button" class="btn btn-outline-danger text-danger">
+                                            <a href="https://www.youtubekids.com" class="text-warning"><strong>Continue</strong></a></button>
+                                    </div>
+        
+                                </div>
+                            </div>
+                        </div>    
+                <hr><blockquote class="blockquote text-light" style="font-size:14px;"><p>
+                    YouTube Kids is an American children’s video app developed by YouTube, 
+                    a subsidiary of Google. The app provides a version of the service oriented towards children, 
+                    with curated selections of content, parental control features, and filtering of 
+                    videos deemed inappropriate viewing for children aged under 7. </p>
+                    <footer class="blockquote-footer"><a href="https://en.wikipedia.org/wiki/YouTube_Kids" target="_blank">
+                    Wikipedia</a></footer></blockquote>
+            </center></div>
+            <div class="col-sm-2"></div>
+        </div>
+    </div><br>
+    <div class="container alert alert-danger alert-dismissible">
+        <button type="button" class="close" data-dismiss="alert">x</button><strong>Wow!</strong> It launches YouTube of your choice!
+    </div>
+
+    <!-- Optional JavaScript; choose one of the two! -->
+
+    <!-- Option 1: jQuery and Bootstrap Bundle (includes Popper) -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script>
+    <script>
+
+        $(function () {
+            $('[data-toggle="popover"]').popover()
+            $('.example-popover').popover({
+                container: 'body'
+            })    
+        })
+        $(document).ready(function(){
+            $('[data-toggle="popover"]').popover();   
+        });
+    </script>
+    <!-- Option 2: jQuery, Popper.js, and Bootstrap JS
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.min.js" integrity="sha384-w1Q4orYjBQndcko6MimVbzY0tgp4pWB4lZ7lr30WKz0vr/aWKhXdBNmNb5D92v7s" crossorigin="anonymous"></script>
+    -->
+  </body>
+</html>
